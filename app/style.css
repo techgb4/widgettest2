@@ -1,0 +1,380 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url(https://wallpapersmug.com/download/1920x1080/9bbc58/red-moon-and-dark-mountains-art.jpg);
+    /* background-image: url(https://www.hdwallpapers.in/download/sunset_dark_mountains_italy_hd-wide.jpg); */
+    /* background-image: url(https://wallpapercave.com/wp/wp6486891.jpg); */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin: 0 12px 0 0;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    color: #fff;
+    
+}
+
+.custom-file-input {
+    
+    display: none;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+.tab_section {
+    width: 25%;
+    height: 100%;
+    color: #fff;
+    /* background: #ffffff9e; */
+    
+}
+
+.content_section {
+    width: 75%;
+    height: 100%;
+    color: #fff;
+    /* background: #ffffff9e; */
+}
+
+.theme {
+    padding: 23px 0 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.content_header {
+    width: calc(100% - 10px);
+    height: 50px;
+    display: flex;
+    border-radius: 7px;
+    background: #ffffff40;
+    margin: 10px 0 0 0;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.tab_name {
+    font-size: 17px;
+    padding: 0 0 0 15px;
+    /* padding: 15px 0 0 15px; */
+
+}
+
+.tabs_container {
+    width: 100%;
+    height: calc(100% - 300px);
+    margin: 45px 0 0 0;
+    font-size: 14px;
+}
+
+.file_tab {
+    padding: 8px 0 8px 20px;
+    display: inline-block;
+    width: calc(100% - 50px);
+    box-sizing: border-box;
+    border-radius: 0 20px 20px 0;
+    margin: 0 0 10px 0px;
+    cursor: pointer;
+}
+
+.mar_50 {
+    margin-top: 50px;
+}
+
+.file_tab_selected {
+    background: #ffffff47;
+}
+
+.strorage_header {
+    color: #000;
+    font-size: 14px;
+    padding: 0 0 0 15px;
+}
+
+.create_folder {
+    border: 1px solid #aaa;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin: 0px 13px 0 0;
+    cursor: pointer;
+}
+
+.strorage_container {
+    width: calc(100% - 10px);
+    margin: 10px 0 0 0;
+    height: calc(100% - 80px);
+    border-radius: 7px;
+    background: #ffffffb8;
+}
+
+.bi-folder, .bi-folder2 {
+    padding: 0 10px 0 0;
+    cursor: pointer;
+}
+
+.folder_up {
+    display: flex;
+    align-items: center;
+}
+
+.bi-upload {
+    padding: 0 8px 0 0;
+    
+}
+
+.bi-plus-circle {
+    padding: 0 0 0 10px !important;
+
+}
+
+input {
+    background: unset;
+    outline: 0;
+    border: 1px solid #ccc;
+    color: #fff;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 6px 15px 6px 12px;
+    border-radius: 4px;
+}
+
+span .bi {
+    padding: 0 12px 0 0;
+}
+
+.file_cont_latest {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    border-bottom: 1px solid #918888;
+    align-items: center;
+    font-size: 14px;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+}
+
+.file_ic,.above_b_bar {
+    width: 35px;
+    padding: 0px 0 0 8px;
+}
+
+.above_b_bar {
+    padding-top: 17px;
+}
+
+.recent_file_name {
+    padding: 0px 0 0 12px;
+    color: #000;
+    font-weight: 500;
+    
+}
+
+.file_upload_loader {
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+    width: 400px;
+    /* height: 100px; */
+    background: #fff;
+    right: 20px;
+    border-radius: 5px;
+}
+
+.file_uploder_head {
+    font-size: 14px;
+    padding: 10px 0px 10px 10px;
+    background: #F6F6F6;
+    color: #665a5a;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.uploaded_file_info {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    position: relative;
+}
+
+.file_name {
+    width: 200px;
+    padding: 0 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+.file_size {
+    font-size: 14px;
+    padding: 0px 0 0 0;
+}
+
+.file_upload_bar {
+    width: calc(100% - 65px);
+    margin: 0px 0 20px 50px;
+    height: 3px;
+    background: #aaa;
+    
+}
+
+.tracking_bar {
+    height: 3px;
+    background: #32a832;
+    
+}
+
+.bi-x {
+    position: absolute;
+    right: 14px;
+    top: 9px;
+    color: #4d4949;
+
+}
+
+.loader_i {
+    position: absolute;
+    right: 0;
+    top: 8px;
+}
+
+.bi-check-circle-fill {
+    color: green;
+    font-size: 18px;
+}
+
+.loder_gif {
+    width: 70px;
+    /* margin: -25px 0 0 0; */
+    position: absolute;
+    top: -25px;
+    right: -11px;
+}
+
+.folder_par {
+    width: max-content;
+    float: left;
+    margin: 10px 0 0 10px;
+    cursor: pointer;
+}
+
+.folder_img {
+    display: block;
+    text-align: center;
+    padding: 12px 0 4px 0;
+    margin: 0 auto;
+    width: 80px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.folder_name {
+    color: #000;
+    font-size: 14px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.strorage_content {
+    height: calc(100% - 55px);
+    width: 100%;
+    overflow: auto;
+}
+
+
+
+.tree_text {
+    display: inline-block;
+    padding: 15px 0 10px 5px;
+    cursor: pointer;
+}
+
+.current_folder_view{
+    font-weight: 600;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid #aaa;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+.fold_sec_in {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    
+    padding: 10px 0 10px 0;
+    
+}
+
+.content_text {
+    color: #000;
+    padding: 10px 0 10px 15px;
+    font-weight: 500;
+    font-size: 14px;
+    background: #ffffff1c;
+    width: auto;
+    margin: 10px 10px 0 10px;
+    border-radius: 5px;
+}
+
+.ads {
+    margin-bottom: 15px
+
+}
+
+.no_data {
+    width: 80%;
+    padding: 0 0 30px 0;
+    margin: auto;
+    border-radius: 6px;
+    background: #ffffff7d;
+    margin-top: calc(50% - 400px);
+}
+
+.empty_fil {
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.empty_text {
+    color: #000;
+    text-align: center;
+    width: max-content;
+    margin: auto;
+    
+}
+
+.disable {
+    color: #aaa;
+    cursor: not-allowed;
+    display: none;
+}
+
+.bi-clock-history {
+    padding-right: 10px;
+}
